@@ -3,8 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Auth from "../routes/Auth";
 import Home from './../routes/Home';
 
-const AppRouter =  () => {
-  const [isLoggendIn, seIsLoggedIn] = useState(false);
+const AppRouter =  ({isLoggendIn}) => {
   return (
       <Routes>
         {isLoggendIn?
